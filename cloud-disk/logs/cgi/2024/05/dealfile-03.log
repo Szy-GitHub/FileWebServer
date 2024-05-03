@@ -1,0 +1,117 @@
+[2024-05-03 13:57:41]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 13:57:41]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:57:41]--[src_cgi/dealfile_cgi.c:730]--user = lxp, token = add96fc0791c35eb95502f20c04ded59, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 13:58:27]--[src_cgi/dealfile_cgi.c:695]--cmd = del
+[2024-05-03 13:58:27]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:58:27]--[src_cgi/dealfile_cgi.c:730]--user = lxp, token = add96fc0791c35eb95502f20c04ded59, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 13:58:27]--[src_cgi/dealfile_cgi.c:329]--remove_file_from_storage ret = 0
+[2024-05-03 13:59:28]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 13:59:28]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:28]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = a0f557df751cfae4bb82a66312af4995, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:02:09]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 14:02:09]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 14:02:09]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = a0f557df751cfae4bb82a66312af4995, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:02:41]--[src_cgi/dealfile_cgi.c:695]--cmd = share
+[2024-05-03 14:02:41]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "87b0f68a6337a1e24f788fc0fb307a8e",
+    "user": "sds"
+}
+
+[2024-05-03 14:02:41]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = 87b0f68a6337a1e24f788fc0fb307a8e, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:06:39]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 14:06:39]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "116ba4bcfb7fd7ed9cb5af16c30b2466",
+    "user": "sds"
+}
+
+[2024-05-03 14:06:39]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = 116ba4bcfb7fd7ed9cb5af16c30b2466, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:25:06]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 14:25:06]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:25:06]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = e13a2c697de77263503cab5dcb9cf676, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:29:57]--[src_cgi/dealfile_cgi.c:695]--cmd = del
+[2024-05-03 14:29:57]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:29:57]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = e13a2c697de77263503cab5dcb9cf676, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:29:57]--[src_cgi/dealfile_cgi.c:329]--remove_file_from_storage ret = 0
+[2024-05-03 14:38:13]--[src_cgi/dealfile_cgi.c:695]--cmd = del
+[2024-05-03 14:38:13]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "d41d8cd98f00b204e9800998ecf8427e",
+    "token": "3c50e56596352b5312e5f74487e270ce",
+    "user": "sds"
+}
+
+[2024-05-03 14:38:13]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = 3c50e56596352b5312e5f74487e270ce, md5 = d41d8cd98f00b204e9800998ecf8427e, filename = lxp.txt
+[2024-05-03 14:38:13]--[src_cgi/dealfile_cgi.c:329]--remove_file_from_storage ret = 0
+[2024-05-03 14:59:10]--[src_cgi/dealfile_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 14:59:10]--[src_cgi/dealfile_cgi.c:47]--redis:[ip=127.0.0.1,port=6379]
+[2024-05-03 14:59:30]--[src_cgi/dealfile_cgi.c:695]--cmd = del
+[2024-05-03 14:59:30]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 14:59:30]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 14:59:30]--[src_cgi/dealfile_cgi.c:329]--remove_file_from_storage ret = 0
+[2024-05-03 15:01:24]--[src_cgi/dealfile_cgi.c:695]--cmd = pv
+[2024-05-03 15:01:24]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:01:24]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 15:47:58]--[src_cgi/dealfile_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:47:58]--[src_cgi/dealfile_cgi.c:47]--redis:[ip=127.0.0.1,port=6379]
+[2024-05-03 15:48:35]--[src_cgi/dealfile_cgi.c:695]--cmd = del
+[2024-05-03 15:48:35]--[src_cgi/dealfile_cgi.c:727]--buf = {
+    "filename": "lxp.txt",
+    "md5": "6cffb1a0d594d9ae443ff7cd35a89752",
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:48:35]--[src_cgi/dealfile_cgi.c:730]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, md5 = 6cffb1a0d594d9ae443ff7cd35a89752, filename = lxp.txt
+[2024-05-03 15:48:35]--[src_cgi/dealfile_cgi.c:329]--remove_file_from_storage ret = 0
+[2024-05-03 15:51:22]--[src_cgi/dealfile_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:51:22]--[src_cgi/dealfile_cgi.c:47]--redis:[ip=127.0.0.1,port=6379]
+[2024-05-03 15:52:18]--[src_cgi/dealfile_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:52:18]--[src_cgi/dealfile_cgi.c:47]--redis:[ip=127.0.0.1,port=6379]

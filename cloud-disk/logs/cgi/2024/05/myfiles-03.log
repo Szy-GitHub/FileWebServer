@@ -1,0 +1,676 @@
+[2024-05-03 13:01:30]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:01:30]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "0b7c956aaf1c1775c51457b5e27840f5",
+    "user": "sds"
+}
+
+[2024-05-03 13:01:30]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:01:30]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:27:35]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:27:35]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "8f95629e533a335697e3bd36f3e0c75f",
+    "user": "sds"
+}
+
+[2024-05-03 13:27:35]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:27:35]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:29:33]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:29:33]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "f725a908a89ee8c35d5bc0f631007825",
+    "user": "sds"
+}
+
+[2024-05-03 13:29:33]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:29:33]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:30:22]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:30:22]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "4173f1a334375241fb122289659129ad",
+    "user": "sds"
+}
+
+[2024-05-03 13:30:22]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:30:22]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:57:13]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:57:13]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "639877b4a7238d18555ec7ac67fc7848",
+    "user": "sds"
+}
+
+[2024-05-03 13:57:13]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:57:13]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:548]--user = lxp, token = add96fc0791c35eb95502f20c04ded59, start = 0, count = 1
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'lxp' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 13:57:26]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"lxp",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-04-12 22:35:14",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	0,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "add96fc0791c35eb95502f20c04ded59",
+    "user": "lxp"
+}
+
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:548]--user = lxp, token = add96fc0791c35eb95502f20c04ded59, start = 0, count = 1
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'lxp' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 13:58:19]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"lxp",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-04-12 22:35:14",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	1,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 13:58:58]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:58:58]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "4f42222388f9072cec4944e463ba250b",
+    "user": "sds"
+}
+
+[2024-05-03 13:58:58]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:58:58]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:59:00]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:59:00]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "4f42222388f9072cec4944e463ba250b",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:00]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:59:00]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:59:03]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:59:03]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:03]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:59:03]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:59:04]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:59:04]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:04]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 13:59:04]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 13:59:09]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 13:59:09]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:09]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 13:59:10]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 13:59:10]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 13:59:10]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = a0f557df751cfae4bb82a66312af4995, start = 0, count = 1
+[2024-05-03 13:59:10]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 13:59:10]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	0,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "a0f557df751cfae4bb82a66312af4995",
+    "user": "sds"
+}
+
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = a0f557df751cfae4bb82a66312af4995, start = 0, count = 1
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:01:59]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "87b0f68a6337a1e24f788fc0fb307a8e",
+    "user": "sds"
+}
+
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "87b0f68a6337a1e24f788fc0fb307a8e",
+    "user": "sds"
+}
+
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 87b0f68a6337a1e24f788fc0fb307a8e, start = 0, count = 1
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:02:38]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	2,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "116ba4bcfb7fd7ed9cb5af16c30b2466",
+    "user": "sds"
+}
+
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "116ba4bcfb7fd7ed9cb5af16c30b2466",
+    "user": "sds"
+}
+
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 116ba4bcfb7fd7ed9cb5af16c30b2466, start = 0, count = 1
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:06:32]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	2,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "4a95334f6098bcbc3aa19d169d31a996",
+    "user": "sds"
+}
+
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "4a95334f6098bcbc3aa19d169d31a996",
+    "user": "sds"
+}
+
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 4a95334f6098bcbc3aa19d169d31a996, start = 0, count = 1
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:11:56]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	3,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a7856f75fb95849a2e9d745b4a40c024",
+    "user": "sds"
+}
+
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "a7856f75fb95849a2e9d745b4a40c024",
+    "user": "sds"
+}
+
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = a7856f75fb95849a2e9d745b4a40c024, start = 0, count = 1
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:17:08]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	3,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "14ec57b96c30ba0f3c2950bc87e240e7",
+    "user": "sds"
+}
+
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "14ec57b96c30ba0f3c2950bc87e240e7",
+    "user": "sds"
+}
+
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 14ec57b96c30ba0f3c2950bc87e240e7, start = 0, count = 1
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:22:28]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	3,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "447b963f1c5aa62bcf3207e3bb95c053",
+    "user": "sds"
+}
+
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "447b963f1c5aa62bcf3207e3bb95c053",
+    "user": "sds"
+}
+
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 447b963f1c5aa62bcf3207e3bb95c053, start = 0, count = 1
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:23:28]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	3,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = e13a2c697de77263503cab5dcb9cf676, start = 0, count = 1
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:24:35]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	3,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "e13a2c697de77263503cab5dcb9cf676",
+    "user": "sds"
+}
+
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = e13a2c697de77263503cab5dcb9cf676, start = 0, count = 1
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:28:52]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 13:59:08",
+			"filename":	"lxp.txt",
+			"share_status":	1,
+			"pv":	4,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "3c50e56596352b5312e5f74487e270ce",
+    "user": "sds"
+}
+
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "3c50e56596352b5312e5f74487e270ce",
+    "user": "sds"
+}
+
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = 3c50e56596352b5312e5f74487e270ce, start = 0, count = 1
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:38:09]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"d41d8cd98f00b204e9800998ecf8427e",
+			"time":	"2024-05-03 14:30:17",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	0,
+			"url":	"",
+			"size":	0,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 14:59:10]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, start = 0, count = 1
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 14:59:28]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 14:38:23",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	0,
+			"url":	"",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, start = 0, count = 1
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 15:00:36]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 15:00:00",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	0,
+			"url":	"http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 15:47:58]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:48:16]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:48:16]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:48:16]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 15:48:17]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 15:48:17]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:48:17]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, start = 0, count = 1
+[2024-05-03 15:48:17]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 15:48:17]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 15:00:00",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 15:48:33]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:48:33]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:48:33]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 15:48:34]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 15:48:34]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "cf2a40aaad14ca04f26260667f9d87a3",
+    "user": "sds"
+}
+
+[2024-05-03 15:48:34]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = cf2a40aaad14ca04f26260667f9d87a3, start = 0, count = 1
+[2024-05-03 15:48:34]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 15:48:34]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 15:00:00",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	1,
+			"url":	"http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt",
+			"size":	13,
+			"type":	"txt"
+		}]
+}
+[2024-05-03 15:49:24]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:49:24]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "2996817bb120ed652769eb9b199c2dc1",
+    "user": "sds"
+}
+
+[2024-05-03 15:49:24]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:49:24]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:49:42]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:49:42]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "2996817bb120ed652769eb9b199c2dc1",
+    "user": "sds"
+}
+
+[2024-05-03 15:49:42]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:49:42]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:49:48]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:49:48]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "2996817bb120ed652769eb9b199c2dc1",
+    "user": "sds"
+}
+
+[2024-05-03 15:49:48]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:49:48]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:49:51]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:49:51]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "2996817bb120ed652769eb9b199c2dc1",
+    "user": "sds"
+}
+
+[2024-05-03 15:49:51]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:49:51]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:51:22]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:51:41]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:51:41]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e4508038bda4c562fd38ab240981f850",
+    "user": "sds"
+}
+
+[2024-05-03 15:51:41]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:51:41]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:51:46]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:51:46]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e4508038bda4c562fd38ab240981f850",
+    "user": "sds"
+}
+
+[2024-05-03 15:51:46]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:51:46]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:51:48]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:51:48]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "e4508038bda4c562fd38ab240981f850",
+    "user": "sds"
+}
+
+[2024-05-03 15:51:48]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:51:48]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:52:18]--[src_cgi/myfiles_cgi.c:40]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:52:29]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:52:29]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a1924ef1777e21eb53ed4bd49a3f3bbe",
+    "user": "sds"
+}
+
+[2024-05-03 15:52:29]--[src_cgi/myfiles_cgi.c:164]--select count from user_file_count where user="sds" 操作失败
+[2024-05-03 15:52:29]--[src_cgi/myfiles_cgi.c:176]--line = 0
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:496]--cmd = count
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "token": "a1924ef1777e21eb53ed4bd49a3f3bbe",
+    "user": "sds"
+}
+
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:176]--line = 1
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:496]--cmd = normal
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:528]--buf = {
+    "count": 1,
+    "start": 0,
+    "token": "a1924ef1777e21eb53ed4bd49a3f3bbe",
+    "user": "sds"
+}
+
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:548]--user = sds, token = a1924ef1777e21eb53ed4bd49a3f3bbe, start = 0, count = 1
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:306]--select user_file_list.*, file_info.url, file_info.size, file_info.type from file_info, user_file_list where user = 'sds' and file_info.md5 = user_file_list.md5 limit 0, 1 在操作
+[2024-05-03 15:52:37]--[src_cgi/myfiles_cgi.c:428]--{
+	"files":	[{
+			"user":	"sds",
+			"md5":	"6cffb1a0d594d9ae443ff7cd35a89752",
+			"time":	"2024-05-03 15:52:35",
+			"filename":	"lxp.txt",
+			"share_status":	0,
+			"pv":	0,
+			"url":	"http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0l8OAITt_AAAADQro4OU685.txt",
+			"size":	13,
+			"type":	"txt"
+		}]
+}

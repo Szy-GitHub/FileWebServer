@@ -1,0 +1,24 @@
+[2024-05-03 13:59:08]--[src_cgi/upload_cgi.c:616]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 13:59:08]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0fSyAY24IAAAADQro4OU416.txt] succ!
+[2024-05-03 13:59:08]--[src_cgi/upload_cgi.c:418]--execlp fdfs_file_info error
+[2024-05-03 13:59:08]--[src_cgi/upload_cgi.c:510]--insert into file_info (md5, file_id, url, size, type, count) values ('6cffb1a0d594d9ae443ff7cd35a89752', 'group1/M00/00/00/wKgFpGY0fSyAY24IAAAADQro4OU416.txt', '', '13', 'txt', 1) 文件信息插入成功
+[2024-05-03 14:30:17]--[src_cgi/upload_cgi.c:616]--sds成功上传[lxp.txt, 大小：0, md5码：d41d8cd98f00b204e9800998ecf8427e]到本地
+[2024-05-03 14:30:17]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0hHmAX8eVAAAAAAAAAAA060.txt] succ!
+[2024-05-03 14:30:17]--[src_cgi/upload_cgi.c:418]--execlp fdfs_file_info error
+[2024-05-03 14:30:17]--[src_cgi/upload_cgi.c:510]--insert into file_info (md5, file_id, url, size, type, count) values ('d41d8cd98f00b204e9800998ecf8427e', 'group1/M00/00/00/wKgFpGY0hHmAX8eVAAAAAAAAAAA060.txt', '', '0', 'txt', 1) 文件信息插入成功
+[2024-05-03 14:38:23]--[src_cgi/upload_cgi.c:616]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 14:38:23]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0hl-ALqG2AAAADQro4OU336.txt] succ!
+[2024-05-03 14:38:23]--[src_cgi/upload_cgi.c:418]--execlp fdfs_file_info error
+[2024-05-03 14:38:23]--[src_cgi/upload_cgi.c:510]--insert into file_info (md5, file_id, url, size, type, count) values ('6cffb1a0d594d9ae443ff7cd35a89752', 'group1/M00/00/00/wKgFpGY0hl-ALqG2AAAADQro4OU336.txt', '', '13', 'txt', 1) 文件信息插入成功
+[2024-05-03 14:59:10]--[src_cgi/upload_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:00:00]--[src_cgi/upload_cgi.c:616]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 15:00:00]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt] succ!
+[2024-05-03 15:00:00]--[src_cgi/upload_cgi.c:456]--file url is: http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt
+[2024-05-03 15:00:00]--[src_cgi/upload_cgi.c:510]--insert into file_info (md5, file_id, url, size, type, count) values ('6cffb1a0d594d9ae443ff7cd35a89752', 'group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt', 'http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0i3CACct3AAAADQro4OU444.txt', '13', 'txt', 1) 文件信息插入成功
+[2024-05-03 15:47:58]--[src_cgi/upload_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:49:32]--[src_cgi/upload_cgi.c:618]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 15:49:32]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0lwyAXxbxAAAADQro4OU717.txt] succ!
+[2024-05-03 15:51:21]--[src_cgi/upload_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:51:44]--[src_cgi/upload_cgi.c:618]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 15:51:44]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0l5CAfVTJAAAADQro4OU138.txt] succ!
+[2024-05-03 15:52:18]--[src_cgi/upload_cgi.c:42]--mysql:[user=szy,pwd=szy123456,database=cloud_disk][2024-05-03 15:52:35]--[src_cgi/upload_cgi.c:616]--sds成功上传[lxp.txt, 大小：13, md5码：6cffb1a0d594d9ae443ff7cd35a89752]到本地
+[2024-05-03 15:52:35]--[src_cgi/upload_cgi.c:351]--get [group1/M00/00/00/wKgFpGY0l8OAITt_AAAADQro4OU685.txt] succ!
+[2024-05-03 15:52:35]--[src_cgi/upload_cgi.c:456]--file url is: http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0l8OAITt_AAAADQro4OU685.txt
+[2024-05-03 15:52:35]--[src_cgi/upload_cgi.c:510]--insert into file_info (md5, file_id, url, size, type, count) values ('6cffb1a0d594d9ae443ff7cd35a89752', 'group1/M00/00/00/wKgFpGY0l8OAITt_AAAADQro4OU685.txt', 'http://192.168.5.164:80/group1/M00/00/00/wKgFpGY0l8OAITt_AAAADQro4OU685.txt', '13', 'txt', 1) 文件信息插入成功
