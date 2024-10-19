@@ -4,7 +4,6 @@
 #include <QString>
 #include "common.h"
 
-
 //单例模式，主要保存当前登陆用户，服务器信息
 class LoginInfoInstance
 {

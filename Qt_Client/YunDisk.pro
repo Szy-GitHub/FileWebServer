@@ -65,4 +65,4 @@ FORMS    += mainwindow.ui \
     rankinglist.ui
 
 RESOURCES += \
-    D:\MyProject\C++\FileServer\project\Code\Qt_client\Client
+    D:\MyProject\C++\FileServer\project\Code\Qt_client

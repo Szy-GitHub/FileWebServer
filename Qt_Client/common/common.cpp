@@ -9,12 +9,13 @@
 #include <QApplication>
 #include <QJsonDocument>
 #include <QFileInfoList>
-#include <QDesktopWidget>
+#include <QScreen>
 #include <QCryptographicHash>
 #include <QScreen>
 #include "des.h"
 #include "common.h"
 #include <QtDebug>
+#include <QRandomGenerator>
 
 // 初始化变量
 QString Common::m_typePath = FILETYPEDIR;
@@ -32,10 +33,9 @@ void Common::moveToCenter(QWidget *tmp)
      // 显示窗口
      tmp->show();
      // 屏幕中间显示
-     // 使用qApp->desktop();也可以
-     QDesktopWidget * desktop = QApplication::desktop();
+     QRect desktop = QGuiApplication::primaryScreen()->geometry();
      // 移动窗口
-     tmp->move((desktop->width() - tmp->width())/2, (desktop->height() - tmp->height())/2);
+     tmp->move((desktop.width() - tmp->width())/2, (desktop.height() - tmp->height())/2);
 }
 
 /* -------------------------------------------*/
@@ -115,25 +115,6 @@ void Common::getFileTypeList()
         cout << m_typePath << "创建成功！！！";
     }
 
-    /*
-        QDir::Dirs      列出目录；
-        QDir::AllDirs   列出所有目录，不对目录名进行过滤；
-        QDir::Files     列出文件；
-        QDir::Drives    列出逻辑驱动器名称，该枚举变量在Linux/Unix中将被忽略；
-        QDir::NoSymLinks        不列出符号链接；
-        QDir::NoDotAndDotDot    不列出文件系统中的特殊文件.及..；
-        QDir::NoDot             不列出.文件，即指向当前目录的软链接
-        QDir::NoDotDot          不列出..文件；
-        QDir::AllEntries        其值为Dirs | Files | Drives，列出目录、文件、驱动器及软链接等所有文件；
-        QDir::Readable      列出当前应用有读权限的文件或目录；
-        QDir::Writable      列出当前应用有写权限的文件或目录；
-        QDir::Executable    列出当前应用有执行权限的文件或目录；
-        Readable、Writable及Executable均需要和Dirs或Files枚举值联合使用；
-        QDir::Modified      列出已被修改的文件，该值在Linux/Unix系统中将被忽略；
-        QDir::Hidden        列出隐藏文件；
-        QDir::System        列出系统文件；
-        QDir::CaseSensitive 设定过滤器为大小写敏感。
-    */
     dir.setFilter(QDir::Files | QDir::NoDot |  QDir::NoDotDot | QDir::NoSymLinks); // 过滤文件
     dir.setSorting(QDir::Size | QDir::Reversed);   // 排序
 
@@ -259,14 +240,11 @@ void Common::writeWebInfo(QString ip, QString port, QString path)
     QString pwd = getCfgValue("login", "pwd");
     QString remember = getCfgValue("login", "remember");
 
-
     QMap<QString, QVariant> login;
     login.insert("user", user);
     login.insert("pwd", pwd);
     login.insert("remember", remember);
 
-
-    // QVariant类作为一个最为普遍的Qt数据类型的联合
     // QVariant为一个万能的数据类型--可以作为许多类型互相之间进行自动转换。
     QMap<QString, QVariant> json;
     json.insert("web_server", web_server);
@@ -356,13 +334,13 @@ QString Common::getStrMd5(QString str)
 QString Common::getBoundary()
 {
     // 随机种子
-    qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
+    QRandomGenerator(QTime(0,0,0).secsTo(QTime::currentTime()));
     QString tmp;
 
     // 48~122, '0'~'A'~'z'
     for(int i = 0; i < 16; i++)
     {
-        tmp[i] = qrand() % (122-48) + 48;
+        tmp[i] = (QChar)(QRandomGenerator::global()->bounded(122-48) + 48);
     }
 
     return QString("------WebKitFormBoundary%1").arg(tmp);

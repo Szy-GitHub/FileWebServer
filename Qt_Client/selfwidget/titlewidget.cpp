@@ -46,7 +46,9 @@ void TitleWidget::mousePressEvent(QMouseEvent *ev)
     if(ev->button() == Qt::LeftButton)
     {
         // 计算和窗口左上角的相对位置
-        m_pos = ev->globalPos() - m_parent->geometry().topLeft();
+
+        QPointF posF = ev->globalPosition() - m_parent->geometry().topLeft();
+        m_pos = posF.toPoint();
     }
 }
 
@@ -55,7 +57,8 @@ void TitleWidget::mouseMoveEvent(QMouseEvent *ev)
     // 移动是持续的状态, 需要使用buttons
     if(ev->buttons() & Qt::LeftButton)
     {
-        QPoint pos = ev->globalPos() - m_pos;
+        QPointF posF = ev->globalPosition() - m_pos;
+        QPoint pos = posF.toPoint();
         m_parent->move(pos);
     }
 }

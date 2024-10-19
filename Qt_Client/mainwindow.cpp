@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     // 去掉边框
     this->setWindowFlags(windowFlags() | Qt::FramelessWindowHint);
-
     // 给菜单窗口传参
     ui->btn_group->setParent(this);
     // 处理所有信号

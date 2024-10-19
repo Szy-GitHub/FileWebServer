@@ -5,6 +5,7 @@
 #include <QNetworkAccessManager>
 #include <mainwindow.h>
 #include "common/common.h"
+#include <QRegularExpression>
 
 namespace Ui {
 class Login;
@@ -26,8 +27,6 @@ public:
 
     // 得到服务器回复的登陆状态， 状态码返回值为 "000", 或 "001"，还有登陆section
     QStringList getLoginStatus(QByteArray json);
-
-
 
 protected:
     void paintEvent(QPaintEvent *);
@@ -51,6 +50,7 @@ private:
     // 主窗口指针
     MainWindow* m_mainWin;
     Common m_cm;
+    QRegularExpression regexp;
 };
 
 #endif // LOGIN_H

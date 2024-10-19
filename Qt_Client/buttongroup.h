@@ -45,7 +45,7 @@ signals:
 private:
     Ui::ButtonGroup *ui;
 
-    QPoint m_pos;
+    QPointF m_pos;
     QWidget* m_parent;
     QSignalMapper* m_mapper;
     QToolButton* m_curBtn;

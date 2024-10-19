@@ -33,10 +33,10 @@ ButtonGroup::ButtonGroup(QWidget *parent) :
     for(; it != m_btns.end(); ++it)
     {
         m_mapper->setMapping(it.value(), it.value()->text());
-        connect(it.value(), SIGNAL(clicked(bool)), m_mapper, SLOT(map()));
+        connect(it.value(), &QToolButton::clicked, m_mapper, qOverload<>(&QSignalMapper::map));
     }
-    connect(m_mapper, SIGNAL(mapped(QString)), this, SLOT(slotButtonClick(QString)));
-
+    void (ButtonGroup::*slotButtonClick)(QString) = &ButtonGroup::slotButtonClick;
+    connect(m_mapper, &QSignalMapper::mappedString, this, slotButtonClick);
     // 关闭
     connect(ui->close, &QToolButton::clicked, [=]()
     {
@@ -134,7 +134,7 @@ void ButtonGroup::mousePressEvent(QMouseEvent *event)
     if(event->button() == Qt::LeftButton)
     {
         // 计算和窗口左上角的相对位置
-        m_pos = event->globalPos() - m_parent->geometry().topLeft();
+        m_pos = event->globalPosition() - m_parent->geometry().topLeft();
     }
 }
 
@@ -143,7 +143,8 @@ void ButtonGroup::mouseMoveEvent(QMouseEvent *event)
     // 移动是持续的状态, 需要使用buttons
     if(event->buttons() & Qt::LeftButton)
     {
-        QPoint pos = event->globalPos() - m_pos;
+        QPointF posF = event->globalPosition() - m_pos;
+        QPoint pos = posF.toPoint();
         m_parent->move(pos);
     }
 }

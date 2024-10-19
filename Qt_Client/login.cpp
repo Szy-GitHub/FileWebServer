@@ -3,7 +3,6 @@
 #include <QPainter>
 #include <QDebug>
 #include <QMessageBox>
-#include <QRegExp>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QNetworkRequest>
@@ -60,7 +59,7 @@ Login::Login(QWidget *parent) :
 
 #endif
 
-#if 1
+#if 0
     // 测试数据
     ui->reg_usr->setText("sds");
     ui->reg_nickname->setText("god");
@@ -72,21 +71,21 @@ Login::Login(QWidget *parent) :
 #endif
 
     // 注册
-    connect(ui->log_register_btn, &QToolButton::clicked, [=]()
+    connect(ui->log_register_btn, &QToolButton::clicked, this, [=]()
     {
         // 切换到注册界面
         ui->stackedWidget->setCurrentWidget(ui->register_page);
         ui->reg_usr->setFocus();
     });
     // 设置按钮
-    connect(ui->title_widget, &TitleWidget::showSetWidget, [=]()
+    connect(ui->title_widget, &TitleWidget::showSetWidget, this, [=]()
     {
         // 切换到设置界面
         ui->stackedWidget->setCurrentWidget(ui->set_page);
         ui->address_server->setFocus();
     });
     // 关闭按钮
-    connect(ui->title_widget, &TitleWidget::closeWindow, [=]()
+    connect(ui->title_widget, &TitleWidget::closeWindow, this, [=]()
     {
         // 如果是注册窗口
         if(ui->stackedWidget->currentWidget() == ui->register_page)
@@ -119,7 +118,7 @@ Login::Login(QWidget *parent) :
         }
     });
     // 切换用户 - 重新登录
-    connect(m_mainWin, &MainWindow::changeUser, [=]()
+    connect(m_mainWin, &MainWindow::changeUser, this, [=]()
     {
         m_mainWin->hide();
         this->show();
@@ -181,8 +180,6 @@ QByteArray Login::setRegisterJson(QString userName, QString nickName, QString fi
         return "";
     }
 
-    //cout << jsonDocument.toJson().data();
-
     return jsonDocument.toJson();
 }
 
@@ -241,8 +238,8 @@ void Login::on_login_btn_clicked()
 
 #if 0
     // 数据校验
-    QRegExp regexp(USER_REG);
-    if(!regexp.exactMatch(user))
+    regexp.setPattern(USER_REG);
+    if(!regexp.match(user).hasMatch())
     {
         QMessageBox::warning(this, "警告", "用户名格式不正确");
         ui->log_usr->clear();
@@ -250,7 +247,7 @@ void Login::on_login_btn_clicked()
         return;
     }
     regexp.setPattern(PASSWD_REG);
-    if(!regexp.exactMatch(pwd))
+    if(!regexp.match(pwd).hasMatch())
     {
         QMessageBox::warning(this, "警告", "密码格式不正确");
         ui->log_pwd->clear();
@@ -258,7 +255,6 @@ void Login::on_login_btn_clicked()
         return;
     }
 #endif
-
 
     // 登录信息写入配置文件cfg.json
     // 登陆信息加密
@@ -277,7 +273,7 @@ void Login::on_login_btn_clicked()
     cout << "post url:" << url << "post data: " << array;
 
     // 接收服务器发回的http响应消息
-    connect(reply, &QNetworkReply::finished, [=]()
+    connect(reply, &QNetworkReply::finished, this, [=]()
     {
         // 出错了
         if (reply->error() != QNetworkReply::NoError)
@@ -333,15 +329,16 @@ void Login::on_register_btn_clicked()
 
 #if 0
     // 数据校验
-    QRegExp regexp(USER_REG);
-    if(!regexp.exactMatch(userName))
+    regexp.setPattern(USER_REG);
+    if(!regexp.match(userName).hasMatch())
     {
         QMessageBox::warning(this, "警告", "用户名格式不正确");
         ui->reg_usr->clear();
         ui->reg_usr->setFocus();
         return;
     }
-    if(!regexp.exactMatch(nickName))
+
+    if(!regexp.match(nickName).hasMatch())
     {
         QMessageBox::warning(this, "警告", "昵称格式不正确");
         ui->reg_nickname->clear();
@@ -349,7 +346,8 @@ void Login::on_register_btn_clicked()
         return;
     }
     regexp.setPattern(PASSWD_REG);
-    if(!regexp.exactMatch(firstPwd))
+    regexp.setPattern(PASSWD_REG);
+    if(!regexp.match(firstPwd).hasMatch())
     {
         QMessageBox::warning(this, "警告", "密码格式不正确");
         ui->reg_pwd->clear();
@@ -364,7 +362,7 @@ void Login::on_register_btn_clicked()
         return;
     }
     regexp.setPattern(PHONE_REG);
-    if(!regexp.exactMatch(phone))
+    if(!regexp.match(phone).hasMatch())
     {
         QMessageBox::warning(this, "警告", "手机号码格式不正确");
         ui->reg_phone->clear();
@@ -372,7 +370,7 @@ void Login::on_register_btn_clicked()
         return;
     }
     regexp.setPattern(EMAIL_REG);
-    if(!regexp.exactMatch(email))
+    if(!regexp.match(email).hasMatch())
     {
         QMessageBox::warning(this, "警告", "邮箱码格式不正确");
         ui->reg_mail->clear();
@@ -449,15 +447,15 @@ void Login::on_set_ok_btn_clicked()
     // 数据判断
     // 服务器IP
     // \\d 和 \\. 中第一个\是转义字符, 这里使用的是标准正则
-    QRegExp regexp(IP_REG);
-    if(!regexp.exactMatch(ip))
+    regexp.setPattern(IP_REG);
+    if(!regexp.match(ip).hasMatch())
     {
         QMessageBox::warning(this, "警告", "您输入的IP格式不正确, 请重新输入!");
         return;
     }
     // 端口号
     regexp.setPattern(PORT_REG);
-    if(!regexp.exactMatch(port))
+    if(!regexp.match(port).hasMatch())
     {
         QMessageBox::warning(this, "警告", "您输入的端口格式不正确, 请重新输入!");
         return;

@@ -65,7 +65,7 @@
          <string>kevin</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/title_user.png</normaloff>:/images/title_user.png</iconset>
         </property>
         <property name="iconSize">
@@ -75,7 +75,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -94,7 +94,7 @@
          <string>我的文件</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/tile_file.png</normaloff>:/images/tile_file.png</iconset>
         </property>
         <property name="iconSize">
@@ -104,7 +104,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -123,7 +123,7 @@
          <string>共享列表</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/title_share.png</normaloff>:/images/title_share.png</iconset>
         </property>
         <property name="iconSize">
@@ -133,7 +133,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -152,7 +152,7 @@
          <string>下载榜</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/tile_hot.png</normaloff>:/images/tile_hot.png</iconset>
         </property>
         <property name="iconSize">
@@ -162,7 +162,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -181,7 +181,7 @@
          <string>传输列表</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/title_data.png</normaloff>:/images/title_data.png</iconset>
         </property>
         <property name="iconSize">
@@ -191,7 +191,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -210,7 +210,7 @@
          <string>切换用户</string>
         </property>
         <property name="icon">
-         <iconset resource="resource.qrc">
+         <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
           <normaloff>:/images/title_change.png</normaloff>:/images/title_change.png</iconset>
         </property>
         <property name="iconSize">
@@ -220,7 +220,7 @@
          </size>
         </property>
         <property name="toolButtonStyle">
-         <enum>Qt::ToolButtonTextUnderIcon</enum>
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
         </property>
         <property name="autoRaise">
          <bool>true</bool>
@@ -233,7 +233,7 @@
    <item>
     <spacer name="horizontalSpacer_2">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -279,7 +279,7 @@
          <item>
           <spacer name="horizontalSpacer">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -295,7 +295,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
              <normaloff>:/images/title_min.png</normaloff>:/images/title_min.png</iconset>
            </property>
            <property name="iconSize">
@@ -315,7 +315,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
              <normaloff>:/images/title_max.png</normaloff>:/images/title_max.png</iconset>
            </property>
            <property name="iconSize">
@@ -335,7 +335,7 @@
             <string>...</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc">
              <normaloff>:/images/title_close.png</normaloff>:/images/title_close.png</iconset>
            </property>
            <property name="iconSize">
@@ -355,7 +355,7 @@
       <item>
        <spacer name="verticalSpacer">
         <property name="orientation">
-         <enum>Qt::Vertical</enum>
+         <enum>Qt::Orientation::Vertical</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -371,7 +371,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/qmake_qmake_immediate.qrc"/>
  </resources>
  <connections/>
 </ui>
