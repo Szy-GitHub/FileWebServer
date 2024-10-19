@@ -335,7 +335,7 @@ QString Common::getBoundary()
 {
     // 随机种子
     QRandomGenerator(QTime(0,0,0).secsTo(QTime::currentTime()));
-    QString tmp;
+    QString tmp(16, ' ');
 
     // 48~122, '0'~'A'~'z'
     for(int i = 0; i < 16; i++)

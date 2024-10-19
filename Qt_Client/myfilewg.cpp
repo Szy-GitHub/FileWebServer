@@ -1185,7 +1185,7 @@ void MyFileWg::addDownloadFiles()
                     成功：{"code":"009"}
                     失败：{"code":"010"}
             */
-            //cout << filePathName;
+            cout << filePathName;
 
             //追加任务到下载队列
             //参数：info：下载文件信息， filePathName：文件保存路径
@@ -1399,7 +1399,7 @@ void MyFileWg::checkTaskList()
     // 定时检查下载队列是否有任务需要下载
     connect(&m_downloadTimer, &QTimer::timeout, [=]()
     {
-        // 上传文件处理，取出上传任务列表的队首任务，上传完后，再取下一个任务
+        // 下载文件处理，取出下载任务列表的队首任务，下载完后，再取下一个任务
         downloadFilesAction();
     });
 

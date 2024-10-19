@@ -24,11 +24,11 @@ UploadTask * UploadTask::getInstance()
 int UploadTask::appendUploadList(QString path)
 {
     qint64 size = QFileInfo( path ).size();
-//    if(size > 30*1024*1024) //最大文件只能是30M
-//    {
-//        cout << "file is to big\n";
-//        return -1;
-//    }
+   if(size > 30*1024*1024) //最大文件只能是30M
+   {
+       cout << "file is to big\n";
+       return -1;
+   }
 
 
     //遍历查看一下，下载的文件是否已经在上传队列中
