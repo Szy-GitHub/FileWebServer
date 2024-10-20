@@ -18,15 +18,10 @@ LIBS=-lfdfsclient	\
 	 -lm            \
 	 -lmysqlclient  
 # 目录路径
-TEST_PATH=test
 COMMON_PATH=common
 CGI_BIN_PATH=bin_cgi
 CGI_SRC_PATH=src_cgi
 
-# 子目标, 因为是测试,所有需要单独生成很多子目标
-# 测试用
-main=main
-redis=redis
 # 项目用
 login=$(CGI_BIN_PATH)/login
 register=$(CGI_BIN_PATH)/register
@@ -47,18 +42,6 @@ target=$(login)		\
 	   $(sharefiles)	\
 	   $(dealsharefile)
 ALL:$(target)
-
-#######################################################################
-#                        测试程序相关的规则
-# 生成每一个子目标,
-# main程序
-$(main):$(TEST_PATH)/main.o $(TEST_PATH)/fdfs_api.o $(COMMON_PATH)/make_log.o
-	$(CC) $^ $(LIBS) -o $@
-
-# redis test 程序
-$(redis):$(TEST_PATH)/myredis.o
-	$(CC) $^ $(LIBS) -o $@
-	#######################################################################
 
 # =====================================================================
 #							项目程序规则
@@ -139,7 +122,6 @@ $(dealsharefile):	$(CGI_SRC_PATH)/dealsharefile_cgi.o \
 	$(CC) $^ -o $@ $(LIBS)
 # =====================================================================
 
-
 #######################################################################
 #                         所有程序都需要的规则
 # 生成所有的.o 文件
@@ -148,7 +130,7 @@ $(dealsharefile):	$(CGI_SRC_PATH)/dealsharefile_cgi.o \
 
 # 项目清除
 clean:
-	-rm -rf *.o $(target) $(TEST_PATH)/*.o $(CGI_SRC_PATH)/*.o $(COMMON_PATH)/*.o
+	-rm -rf *.o $(target) $(CGI_SRC_PATH)/*.o $(COMMON_PATH)/*.o
 
 # 声明伪文件
 .PHONY:clean ALL

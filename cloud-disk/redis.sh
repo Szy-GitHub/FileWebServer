@@ -15,7 +15,7 @@ is_directory()
     fi
 }
 
-# 判断redis目录是否存在, 如果不存在则创建
+# 判断pid文件是否存在
 is_regfile()
 {
     if [ ! -f $1 ]; then
@@ -47,7 +47,6 @@ case $1 in
         else
             # 删除$FILE 文件
             unlink "$NAME/$FILE"
-
             echo "Redis starting ..."
             redis-server ./conf/redis.conf
             if [ $? -eq 0 ];then
