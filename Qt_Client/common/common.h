@@ -10,9 +10,9 @@
 #define cout qDebug() << "[ " << __FILE__ << ":"  << __LINE__ << " ] "
 
 // 文件路径
-const QString CONFFILE      = "D:/MyProject/C++/FileServer/project/Code/Qt_Client/conf/cfg.json";     // 配置文件
-const QString  RECORDDIR    = "D:/MyProject/C++/FileServer/project/Code/Qt_Client/conf/record/";      // 用户文件上传下载记录
-const QString  FILETYPEDIR  = "D:/MyProject/C++/FileServer/project/Code/Qt_Client/conf/fileType";     // 存放文件类型图片目录
+const QString CONFFILE      = ":/conf/cfg.json";     // 配置文件
+const QString  RECORDDIR    = ":/conf/record/";      // 用户文件上传下载记录
+const QString  FILETYPEDIR  = ":/conf/fileType";     // 存放文件类型图片目录
 
 // 正则表达式
 const QString USER_REG      = "^[a-zA-Z\\d_@#-\\*]\\{3,16\\}$";

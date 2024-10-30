@@ -8,7 +8,7 @@
         "path": "D:/MyProject/C++/FileServer/project/Code/Qt_Client/conf/fileType"
     },
     "web_server": {
-        "ip": "192.168.221.128",
+        "ip": "124.70.71.99",
         "port": "80"
     }
 }

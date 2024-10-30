@@ -48,7 +48,7 @@ Login::Login(QWidget *parent) :
     // 加载图片信息 - 显示文件列表的时候用，在此初始化
     m_cm.getFileTypeList();
 
-#if 1
+#if 0
     // 测试数据
     ui->reg_usr->setText("lxp");
     ui->reg_nickname->setText("pig");
